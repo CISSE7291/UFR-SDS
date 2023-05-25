@@ -1,0 +1,467 @@
+/* ---- Google Fonts ---- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* ---- Custom Properties ---- */
+:root{
+    /* Colors */
+    --color-dark: #eaecf3d2;
+    --color-white: #ff0b0b;
+    --color-gray: #f5f5f5;
+    --color-purple: #748dff;
+    --color-dimPurple: #D9DCEA;
+    --color-bg: #EFF1F7;
+    
+    /* Fonts and Typography */
+    --ff-primary: 'Open Sans', sans-serif;
+
+    --fs-h3: 1rem;
+    --fs-normal: .913rem;
+    --fs-small: .745rem;
+
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+    /* Box Shadow */
+    --bxs-card: 0px 15px 27px -5px rgba(236, 14, 25, 0.925);
+}
+
+/* ---- General Styles ---- */
+
+/* Reset */
+
+*,
+*::before,
+*::after{
+    margin: auto;;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body{
+    background-color: var(--color-bg);
+}
+.sect1{
+    background-color: aliceblue;
+}
+button{
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    font-family: inherit;
+}
+
+/* Components */
+
+.btn{
+    padding: .875rem 3.625rem;
+    font-weight: var(--fw-bold);
+}
+
+.btn--ghost{
+    border: .125rem solid var(--color-dimPurple);
+    border-radius: .3125rem;
+    color: var(--color-gray);
+    opacity: .85;
+}
+
+.btn--ghost:hover{
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    border-color: var(--color-purple);
+}
+
+/* ---- Layout Styles ---- */
+
+.container{
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ---- Profile Cards Styles ---- */
+
+.profile{
+    width: 500px;
+    background-color: var(--color-white);
+    border-radius: .625rem;
+    padding: 4.6rem;
+}
+
+.profile:hover{
+    box-shadow: var(--bxs-card);
+    transform: scale(1.2);
+}
+
+.profile:nth-of-type(2){
+    margin: 0 1rem 0;
+}
+
+.profile > *:not(:last-child){
+    margin-bottom: 2.5rem;
+}
+
+.profile__text{
+    text-align: center;
+}
+
+.profile__user-name{
+    margin-bottom: .25rem;
+}
+.profile .btn{
+    width: 100%;
+}
+.A{
+    text-align: center;
+    padding-bottom: 45px;;
+}
+.button {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0.5rem;
+    line-height: 1;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    background: #e8e9f0;
+    border-radius: 0.3rem;
+    color: white;
+    font-weight: 300;
+    width: 170px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background: #2c2f44;
+  }
+ 
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    height: 200px; /* Ajustez la hauteur selon vos besoins */
+    background-color: #f2f2f2; /* Couleur de fond du menu */
+    padding: 0 70px; /* Ajustez les marges intérieures selon vos besoins */
+  }
+  
+  .logo-left, .logo-right {
+    width: 17%; /* Ajustez la largeur selon vos besoins */
+    height: 100%; /* Assurez-vous que le logo occupe toute la hauteur du menu */
+  }
+  
+  .text-center {
+    flex-grow: 12; /* Permet au texte de s'étendre et de centrer */
+    text-align: center;
+  }
+  /*FOOTER*/
+
+footer {
+    background: #e7ebe7;
+    background: -webkit-linear-gradient(59deg, #3A6073, #4eeb39);
+    background: linear-gradient(59deg, #3A6073, #5de627);
+    color: white;
+    margin-top:100px;
+    width: 100%;
+    height: 80%;
+  } 
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .text-center2{
+    font-size: 22px;
+  }
+
+  .copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+  }
+  
+  .footer-down {
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    color: rgb(252, 250, 250);
+  }
+  
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;1,400&display=swap');
+
+ /*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* centrer le formulaire */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+
+    background: #46c565;
+}
+/* carré transparent */
+.container2{
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    background: rgba(229, 223, 230, 0.95);
+    box-shadow: 0 25px 45px rgba(0,0,0,0,0.1);
+    border: 3px solid rgb(232, 3, 3);
+    border-right: 3px solid rgb(232, 3, 3);
+    border-bottom: 3px solid rgb(232, 3, 3);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+} 
+
+
+.container2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(255,255,255,0.05);
+    pointer-events: none;
+    transform: skewX(-25deg);
+}
+
+/* texte du formulaire*/
+.container2 h2{
+    width: 100%;
+    text-align: center;
+    color : #0a0a0a;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* position du formulaire responsive */
+.container2 .row{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+/* position écart entre les entrees */
+.container2 .row .col{
+    position: relative;
+    padding: 0 30px;
+    margin: 30px 0 20px;
+
+}
+
+/* ecart entre les entrees */
+.container2 .row .col .inputbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #fff; 
+
+}
+
+/* esthetique des entrees */
+.container2 .row .col .inputbox input{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: transparent;
+    border-radius: 50px;
+    outline: none;
+    color:#0c0b0b;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+/* placement et degaine du txt formulaire */
+.container2 .row .col .inputbox span
+{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(12, 11, 11, 0.2);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+/* deplacement du texte au clic et de la degaine */
+.container2 .row .col .inputbox input:valid ~ span,
+.container2 .row .col .inputbox input:focus ~ span{
+    transform: translateX(10px) translateY(-40px);
+    
+    /* pb */
+    /* padding: 0 15;
+    border-radius: 10px;
+    /*border-left: 1px solid #2196f3;
+    border-right: 1px solid #2196f3; */
+
+    background: #ffffff;
+    color: #000000;
+
+    
+    letter-spacing: 0.2em; 
+    font-size: 0.8em;
+    
+} */
+
+/* couleur du contour au clic */
+.container2 .row .col .inputbox input:valid,
+.container2 .row .col .inputbox input:focus {
+    border :1px solid #ffffff;
+}
+
+/* deplacement du texte au clic et de la degaine pour le textarea */
+
+.container2 .row .col .inputbox textarea{
+    height: 100%;
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: transparent;
+    border-radius: 25px;
+    outline: none;
+    color:#0e0d0d;
+    padding: 8px 10px;
+    font-size: 1em;
+    transition: 0.5s;
+    
+}
+
+
+.container2 .row .col .inputbox textarea:valid,
+.container2 .row .col .inputbox textarea:focus {
+    border :1px solid #ffffff;
+}
+
+
+.container2 .row .col .inputbox textarea:valid ~ span,
+.container2 .row .col .inputbox textarea:focus ~ span{
+    transform: translateX(15px) translateY(-10px);
+    padding: 0 15;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #000000;
+    letter-spacing: 0.2em; 
+    font-size: 0.8em;
+    z-index: 1;    
+}
+/* boutton */
+.container2 .row .col input[type="submit"]{
+
+    display: flex;
+    border: none;
+    padding: 8px 25px;
+    cursor: pointer;
+    outline: none;
+    background: white;
+    color: black;
+    font-weight: 18px;
+    border-radius: 50px;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    transition: 0.5s;
+
+}
+
+.container2 .row .col input[type="submit"]:hover {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body{
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+  background: rgb(247, 248, 250);
+}
+h2{
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(2, 2, 2);
+  padding: 50px 0;
+}
+.bouton{
+    font-size: 30px;
+}
+.container3{
+    background-color: #4eeb39;
+}
+/* Table Styles */
+
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
